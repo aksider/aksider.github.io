@@ -565,8 +565,12 @@ aside{
     background-color: #ffffff;
     border: 2px solid #79878d;
     
-    font-size: 13px;
+/*    font-size: 13px;*/
     color: #465961;
+}
+
+.group_items li a:hover:before{
+    border: 2px solid #0c3256;
 }
 
 .group_items li a:hover{
