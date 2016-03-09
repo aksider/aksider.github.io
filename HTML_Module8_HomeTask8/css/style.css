@@ -15,8 +15,7 @@
     src: url('../fonts/OpenSans-Light-webfont.eot');
     src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -27,8 +26,7 @@
     src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
     src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+         url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -101,6 +99,108 @@ header{
 .menu__link:hover {
     border-bottom: 2px solid #edbfff;
 }
+
+
+
+
+.menu2{
+    padding-top: 20px;
+    clear: both;
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 248px;
+    list-style: none;
+}
+
+.menu2__li{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+.menu2__a {
+    font-family: leaguegothic;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 42px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #edbfff;
+}
+
+.menu2__a:hover{
+    display: block;
+    width: 248px;
+    line-height: 40px;
+    border: none;
+}
+
+.menu2__a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+.hidden{
+    width: 250px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(59,46,67,0.85);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.hidden:before{
+    content: 'Home';
+    position: relative;
+    display: block;
+    width: 248px;
+    height: 42px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: leaguegothic;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 42px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.hidden__li{
+    background: none;
+    margin: 0;
+    border-top: 1px solid #503d58;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #36283e;
+    
+    border-radius: 0px 0px 0px 0px;
+}
+
+.hidden__li:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.hidden__a{
+    display: block;
+    line-height: 42px;
+    font-family: leaguegothic;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+}
+
+.hidden__a:hover{
+    margin-top: 1px;
+    background-color: rgba(43,35,50,0.75);
+    line-height: 39px;
+    border-bottom: 2px solid #edbfff;
+}
+
+
+
 
 .slider {
     clear: both;
@@ -846,6 +946,11 @@ header{
     .menu__link:hover {
         border-bottom: 2px solid #edbfff;
     }
+    
+    .menu2 {
+        display: none;
+    }
+
 
     .slider {
         clear: both;
@@ -1536,6 +1641,10 @@ header{
         float: left;
         margin-left: 0;
         margin-top: 39px;
+    }
+
+    .menu2 {
+        display: none;
     }
     
     .slider{
