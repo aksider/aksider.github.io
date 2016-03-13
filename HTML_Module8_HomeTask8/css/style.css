@@ -1231,6 +1231,10 @@ footer{
         font-size: 16px;
         line-height: 24px;
         color: #454545;
+
+        height: 170px;
+        overflow: hidden;
+        margin-bottom: 20px;
     }
 
     .menu_white ul{
@@ -1327,6 +1331,10 @@ footer{
         font-size: 16px;
         line-height: 24px;
         color: #454545;
+
+        width: 84%;
+        height: 24px;
+        overflow: hidden;
     }
 
     .updates-box a{
