@@ -40,8 +40,8 @@ body{
 }
 
 header{
-    width: 960px;
-    height: 280px;
+/*    width: 960px;*/
+/*    height: 280px;*/
     margin-left: auto;
     margin-right: auto;
 /*    font-family: leaguegothic;*/
@@ -99,9 +99,6 @@ header{
 .menu__link:hover {
     border-bottom: 2px solid #edbfff;
 }
-
-
-
 
 .menu2{
     padding-top: 20px;
@@ -314,15 +311,6 @@ header{
     margin-top: 85px;
 }
 
-.slider__playbutton {
-/*
-    width: 77px;
-    margin-top: -204px;
-    margin-left: auto;
-    margin-right: auto;
-*/
-}
-
 .slider__menu {
 /*    width: 960px;*/
     display: block;
@@ -407,20 +395,10 @@ header{
 }
 
 .about .second{
-/*    display: block;*/
-/*    float: left;*/
-/*    height: 30px;*/
-/*    width: 32px;*/
-/*    background: url(../img/icons.png) 0 0 no-repeat;*/
     background-position: -31px 0;
 }
 
 .about .third{
-/*    display: block;*/
-/*    float: left;*/
-/*    height: 30px;*/
-/*    width: 32px;*/
-/*    background: url(../img/icons.png) 0 0 no-repeat;*/
     background-position: -62px 0;
 }
 
@@ -447,7 +425,6 @@ header{
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 }
 
-
 .about__item a{
     margin-top: 20px;
     margin-right: 20px;
@@ -460,7 +437,6 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-
 }
 
 .about__item a:hover{
@@ -720,7 +696,6 @@ header{
     height: 395px;
     background-color: #ececec;
     border-top: 1px solid #d8d8d8;
-    
 }
 
 .news {
@@ -729,7 +704,6 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .news__pingbuller {
     display: block;
@@ -868,7 +842,6 @@ footer{
 .copyright {
     display: block;
     float: right;
-/*    margin-top: 55px;*/
 }
 
 .copyright p{
@@ -892,21 +865,12 @@ footer{
 
 
 
-
-
-
-
-
-
 @media only screen and (min-width: 960px) {
     header{
         width: 960px;
-/*        width: 57.8%;*/
-/*        width: 40%;*/
         height: 280px;
         margin-left: auto;
         margin-right: auto;
-    /*    font-family: leaguegothic;*/
     }
 
     .logo__title {
@@ -922,26 +886,14 @@ footer{
     }
 
     .logo__title-end{
-    /*    background: rgb(51, 38, 58);*/
         color: rgb(51, 38, 58);
         text-shadow: none;
-    /*
-        background: -moz-linear-gradient(270deg, rgb(51, 38, 58) 0%, rgb(116, 80, 131) 100%);
-        background: -webkit-linear-gradient(270deg, rgb(51, 38, 58) 0%, rgb(116, 80, 131) 100%);
-        background: -o-linear-gradient(270deg, rgb(51, 38, 58) 0%, rgb(116, 80, 131) 100%);
-        background: -ms-linear-gradient(270deg, rgb(51, 38, 58) 0%, rgb(116, 80, 131) 100%);
-        background: linear-gradient(0deg, rgb(51, 38, 58) 0%, rgb(116, 80, 131) 100%);
-        background-clip: text;
-
-    */
     }
 
     .menu {
-/*        clear: both;*/
         display: block;
         float: left;
         margin-top: 76px;
-/*        margin-left: 170px;*/
         font-family: leaguegothic;
     }
 
@@ -972,7 +924,6 @@ footer{
     .slider {
         clear: both;
         display: block;
-    /*    float: left;*/
         width: 100%;
         height: 568px;
     }
@@ -984,11 +935,8 @@ footer{
 
 
     .slider__content {
-/*        display: block;*/
         float: none;
-/*        width: 1560px;*/
         width: 960px;
-/*        height: 400px;*/
         margin-left: auto;
         margin-right: auto;
     }
@@ -1024,7 +972,6 @@ footer{
         font-family: leaguegothic;
         color: #ffffff;
         text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
-/*        width: 82%;*/
         overflow: hidden;
     }
 
@@ -1037,7 +984,6 @@ footer{
         line-height: 36px;
         height: 36px;
         overflow: hidden;
-/*        width: 82%;*/
     }
 
     .slider__text p{
@@ -1049,11 +995,9 @@ footer{
         line-height: 24px;
         height: 172px;
         overflow: hidden;
-/*        width: 82%;*/
     }
     
     .slider__menu {
-/*        width: 52%;*/
         width: 960px;
         display: block;
         overflow: hidden;
@@ -1065,7 +1009,6 @@ footer{
     .slider__menu ul{
         display: block;
         float: right;
-/*        margin-right: 180px;    */
         margin-right: 25%;    
     }
 
@@ -1100,7 +1043,6 @@ footer{
     }
 
     .about-block {
-    /*    position: relative;*/
         height: 340px;
         border-top: 1px solid #33253a;
         border-bottom: 1px solid #0d151b;
@@ -1118,7 +1060,6 @@ footer{
         margin-left: auto;
         margin-right: auto;
         margin-top: 80px;
-    /*    overflow: hidden;*/
     }
 
     .about__item {
@@ -1260,7 +1201,6 @@ footer{
         position: relative;
         top: 20px;
         left: -25px;
-    /*    float: left;*/
     }
 
     .testimonial-box h3{
@@ -1268,7 +1208,6 @@ footer{
         float: left;
         position: relative;
         top: -17px;
-    /*    top: -37px;*/
         margin-left: 39px;
         margin-right: 39px;
         font-family: leaguegothic;
@@ -1279,8 +1218,6 @@ footer{
     }
 
     .pink-text{
-    /*    display: block;*/
-    /*    float: right;*/
         color: #edbfff;
     }
 
@@ -1565,7 +1502,6 @@ footer{
         color: #787878;
     }
 
-
     .footer-box {
         width: 960px;
         height: 114px;
@@ -1634,7 +1570,6 @@ footer{
     
     .slider__content {
         width: 81.5%;
-/*        width: 768px;*/
     }
     
     .slider__left-button{
@@ -1663,7 +1598,6 @@ footer{
         margin-top: -120px;
     }
 
-    
     .slider__text h1{
         font-size: 48px;
         height: 51px;
@@ -1688,7 +1622,6 @@ footer{
     .slider__text {
         float: left;
         width: 40.6%;
-/*        width: 275px;*/
     }
     
     .slider__menu {
@@ -1702,12 +1635,10 @@ footer{
     
     .about {
         width: 81.5%;
-/*        width: 768px;*/
     }
     
     .about__item {
         width: 29%;
-/*        margin-right: 33px;*/
         margin-right: 4%;
     }
     
@@ -1734,12 +1665,10 @@ footer{
     
     .contento {
         width: 81.5%;
-/*        width: 768px;*/
     }
     
     .testimonial-box {
         width: 40.3%;
-/*        width: 310px;*/
         height: 270px;
     }
     
@@ -1750,7 +1679,6 @@ footer{
     .testimonial-box:after {
         display: none;
     }
-
     
     .testimonial-box p{
         max-height: 145px;
@@ -1774,28 +1702,20 @@ footer{
     
     .menu_white ul{
         width: 110px;
-/*        width: auto;*/
-/*
-        margin-left: auto;
-        margin-right: auto;
-*/
         margin-top: 15px;
         margin-left: 27%;
     }
     
     .updates-box {
         width: 44.4%;
-/*        width: 340px;*/
     }
     
     .updates-box__icon{
         margin-right: 6%;
     }
     
-    
     .updates-box__item h5{
         width: 76%;
-/*        width: 270px;*/
         max-height: 24px;
         overflow: hidden;
     }
@@ -1803,7 +1723,6 @@ footer{
     
     .updates-box__item p{
         width: 76%;
-/*        width: 270px;*/
         max-height: 20px;
         overflow: hidden;
     }
@@ -1818,7 +1737,6 @@ footer{
     
     .logo-block__logos {
         width: 81.5%;
-/*        width: 768px;*/
     }
     
     .logo-block ul{
@@ -1828,22 +1746,17 @@ footer{
     }
     
     .logo-block li{
-/*        margin-right: 51px;*/
-/*        margin-right: 51px;*/
         margin-right: 4%;
         margin-left: 0;
     }
     
     .news {
         width: 81.5%;
-/*        width: 768px;*/
     }
     
     .news__item{
         width: 27.4%;
-/*        width: 210px;*/
         margin-right: 5.5%;
-/*        margin-right: 45px;*/
     }
 
     .news__item h3{
@@ -1880,7 +1793,6 @@ footer{
         overflow: hidden;
     }
     
-    
     .footer-box .menu{
         width: 100%;
         margin-bottom: 40px;
@@ -1888,20 +1800,15 @@ footer{
     
     .footer-box {
         width: 88.5%;
-/*        width: 730px;*/
         height: 203px;
     }
     
     .copyright {
-/*        margin-top: 55px;*/
         margin-top: 0px;
         margin-top: 0px;
     }
     
 }
-
-
-
 
 
 
@@ -1959,7 +1866,6 @@ footer{
     
     .slider__content {
         width: 54%;
-/*        width: 405px;*/
         height: 60px;
     }
     
@@ -1993,7 +1899,6 @@ footer{
     
     .slider__text {
         float: left;
-/*        width: 210px;*/
         width: 47%;
 
     }
@@ -2019,7 +1924,6 @@ footer{
     
     .about {
         width: 64%;
-/*        width: 480px;*/
         margin-top: 70px;
     }
     
@@ -2065,12 +1969,10 @@ footer{
     
     .contento {
         width: 64%;
-/*        width: 480px;*/
   }
     
     .testimonial-box {
         width: 87.5%;
-/*        width: 420px;*/
         height: 275px;
         margin-top: 70px;
         margin-bottom: 60px;
@@ -2106,7 +2008,6 @@ footer{
     .menu_white{
         clear: both;
         width: 87.5%;
-/*        width: 420px;*/
     }
     
     .menu_white ul{
@@ -2119,7 +2020,6 @@ footer{
         clear: both;
         float: none;
         width: 75%;
-/*        width: 360px;*/
         margin-left: auto;
         margin-right: auto;
 
@@ -2127,7 +2027,6 @@ footer{
     
     .updates-box__item p{
         width: 68%;
-/*        width: 270px;*/
         height: 20px;
         overflow: hidden;
         
@@ -2135,7 +2034,6 @@ footer{
     
     .updates-box__item h5{
         width: 68%;
-/*        width: 270px;*/
         height: 20px;
         overflow: hidden;
         
@@ -2151,14 +2049,12 @@ footer{
     }
     
     .logo-block{
-/*        height: 235px;*/
         height: 235px;
         width: 100%;
     }
     
     .logo-block__logos {
         width: 64%;
-/*        width: 480px;*/
         margin-top: 37px;
     }
     
@@ -2169,9 +2065,7 @@ footer{
     
     .logo-block li{
         margin-right: 5%;
-/*        margin-right: 30px;*/
         margin-left: 0;
-/*        margin-left: 30px;*/
         margin-bottom: 25px;        
     }
     
@@ -2182,7 +2076,6 @@ footer{
     
     .news {
         width: 64%;
-/*        width: 480px;*/
         margin-top: 80px;
     }
     
@@ -2225,7 +2118,6 @@ footer{
     
     .footer-box {
         width: 480px;
-/*        width: auto;*/
         height: 200px;
     }
     
@@ -2249,6 +2141,7 @@ footer{
     }
     
 }
+
 
 
 
@@ -2284,21 +2177,8 @@ footer{
         display: none;
     }
     
-/*
-    .slider__left-button a{
-        margin-top: 105px;
-        margin-right: 38px;
-    }
-    
-    .slider__right-button a{
-        margin-top: 105px;
-        margin-left: 0;
-    }
-*/
-    
     .slider__text h1{
         font-size: 36px;
-/*        margin-top: 95px;*/
     }
     
     .slider__text h2{
@@ -2383,13 +2263,11 @@ footer{
     }
     
     .contento {
-/*        width: 320px;*/
         width: 69.2%;
     }
     
     .testimonial-box {
         width: 79.5%;
-/*        width: 255px;*/
         height: 275px;
         margin-top: 70px;
         margin-bottom: 60px;
@@ -2402,7 +2280,6 @@ footer{
     .testimonial-box:after {
         display: none;
     }
-
     
     .testimonial-box h3{
         top: -20px;
@@ -2422,11 +2299,9 @@ footer{
         margin-bottom: 15px;
     }
     
-    
     .menu_white{
         clear: both;
         width: 100%;
-/*        width: 255px;*/
     }
     
     .menu_white ul{
@@ -2438,7 +2313,6 @@ footer{
     .updates-box {
         clear: both;
         float: none;
-/*        width: 300px;*/
         width: 94%;
         margin-left: auto;
         margin-right: auto;
@@ -2447,18 +2321,14 @@ footer{
     
     .updates-box__item h5{
         width: 53%;
-/*        width: 200px;*/
         height: 20px;
         overflow: hidden;
-        
     }
     
     .updates-box__item p{
         width: 72%;
-/*        width: 230px;*/
         height: 20px;
         overflow: hidden;
-        
     }
     
     #readmore1{
@@ -2476,7 +2346,6 @@ footer{
     
     .logo-block__logos {
         width: 69.2%;
-/*        width: 320px;*/
         margin-top: 50px;
     }
     
@@ -2487,16 +2356,13 @@ footer{
     
     .logo-block li{
         margin-right: 7%;
-/*        margin-right: 30px;*/
         margin-left: 7%;
-/*        margin-left: 30px;*/
         margin-bottom: 55px;        
     }
     
     .content{
         display: none
     }
-    
 
     .news__pingbuller{
         display: none;
@@ -2510,13 +2376,7 @@ footer{
         display: none;
     }
     
-    
-    footer{
-        
-    }
-    
     .footer-box {
-/*        width: 320px;*/
         width: 100%;
         height: 200px;
     }
