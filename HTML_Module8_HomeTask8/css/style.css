@@ -77,7 +77,7 @@ header{
     display: block;
     float: left;
     margin-top: 76px;
-    margin-left: 170px;
+/*    margin-left: 170px;*/
     font-family: leaguegothic;
 }
 
@@ -200,8 +200,6 @@ header{
 }
 
 
-
-
 .slider {
     clear: both;
     display: block;
@@ -211,34 +209,43 @@ header{
 }
 
 .slider__block {
+    display: flex;
+    align-items: center;
     height: 400px;
-
     background-color: rgba(0,0,0,0.2);
 }
 
 
 .slider__content {
-    width: 1560px;
+/*    width: 1560px;*/
     margin-left: auto;
     margin-right: auto;
+}
+
+.slider__left-button{
+    display: block;
+    float: left;
 }
 
 
 .slider__left-button a{
     display: block;
-    float: left;
-    margin-top: 180px;
-    margin-right: 295px;
+/*    margin-top: 180px;*/
+/*    margin-right: 295px;*/
     height: 42px;
     width: 28px;
     background: url(../img/icons2.png) 0 0 no-repeat;
 }
 
-.slider__right-button a{
+.slider__right-button {
     display: block;
     float: right;
-    margin-top: 180px;
-    margin-left: 295px;
+}
+
+.slider__right-button a{
+/*    margin-top: 180px;*/
+/*    margin-left: 295px;*/
+    display: block;
     height: 42px;
     width: 28px;
     background: url(../img/icons2.png) 0 0 no-repeat;
@@ -272,20 +279,22 @@ header{
 
 .slider__text {
     float: left;
-    width: 500px;
+/*    width: 500px;*/
 }
 
 .slider__image-block {
     display: block;
     float: left;
+    margin-top: -80px;
+    margin-left: 5%;
 }
 
 .slider__image-front {
 /*    display: block;*/
 /*    float: left;*/
-    margin-top: -20px;
+/*    margin-top: -20px;*/
     position: absolute;
-    margin-left: 195px;
+    margin-left: 80px;
 }
 
 .slider__image-front a{
@@ -300,9 +309,9 @@ header{
 }
 
 .slider__image-back {
-    margin-left: 120px;
+/*    margin-left: 120px;*/
     float: left;
-    margin-top: 65px;
+    margin-top: 85px;
 }
 
 .slider__playbutton {
@@ -315,7 +324,7 @@ header{
 }
 
 .slider__menu {
-    width: 960px;
+/*    width: 960px;*/
     display: block;
     overflow: hidden;
     margin-left: auto;
@@ -888,6 +897,8 @@ header{
 @media only screen and (min-width: 960px) {
     header{
         width: 960px;
+/*        width: 57.8%;*/
+/*        width: 40%;*/
         height: 280px;
         margin-left: auto;
         margin-right: auto;
@@ -897,6 +908,7 @@ header{
     .logo__title {
         font-family: leaguegothic;
         margin-top: 70px;
+        margin-right: 170px;
         display: block;
         float: left;
         font-size: 48px;
@@ -921,10 +933,11 @@ header{
     }
 
     .menu {
+/*        clear: both;*/
         display: block;
         float: left;
         margin-top: 76px;
-        margin-left: 170px;
+/*        margin-left: 170px;*/
         font-family: leaguegothic;
     }
 
@@ -962,37 +975,44 @@ header{
 
     .slider__block {
         height: 400px;
-
         background-color: rgba(0,0,0,0.2);
     }
 
 
     .slider__content {
-        width: 1560px;
+/*        display: block;*/
+        float: none;
+/*        width: 1560px;*/
+        width: 960px;
+/*        height: 400px;*/
         margin-left: auto;
         margin-right: auto;
     }
 
-
-    .slider__left-button a{
-        display: block;
-        float: left;
-        margin-top: 180px;
-        margin-right: 295px;
-        height: 42px;
-        width: 28px;
-        background: url(../img/icons2.png) 0 0 no-repeat;
+    
+    .slider__left-button{
+        margin-left: 10%;
+        margin-right: 1%;
     }
 
+    .slider__left-button a{
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .slider__right-button{
+        margin-right: 10%;
+        margin-left: 1%;
+    }
+    
     .slider__right-button a{
-        display: block;
-        float: right;
-        margin-top: 180px;
-        margin-left: 295px;
-        height: 42px;
-        width: 28px;
-        background: url(../img/icons2.png) 0 0 no-repeat;
-        background-position: -29px 0;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    .slider__text {
+        float: left;
+        width: 52%;
     }
 
     .slider__text h1{
@@ -1000,6 +1020,8 @@ header{
         font-family: leaguegothic;
         color: #ffffff;
         text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+/*        width: 82%;*/
+        overflow: hidden;
     }
 
     .slider__text h2{
@@ -1008,7 +1030,10 @@ header{
         color: #edbfff;
         text-transform: uppercase;
         text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
-
+        line-height: 36px;
+        height: 36px;
+        overflow: hidden;
+/*        width: 82%;*/
     }
 
     .slider__text p{
@@ -1018,53 +1043,13 @@ header{
         color: #ffffff;
         text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
         line-height: 24px;
+        height: 172px;
+        overflow: hidden;
+/*        width: 82%;*/
     }
-
-    .slider__text {
-        float: left;
-        width: 500px;
-    }
-
-    .slider__image-block {
-        display: block;
-        float: left;
-    }
-
-    .slider__image-front {
-    /*    display: block;*/
-    /*    float: left;*/
-        margin-top: -20px;
-        position: absolute;
-        margin-left: 195px;
-    }
-
-    .slider__image-front a{
-        position: relative;
-        display: block;
-        margin-top: -204px;
-        margin-left: auto;
-        margin-right: auto;
-        height: 77px;
-        width: 77px;
-        background: url(../img/Play.png) 0 0 no-repeat;
-    }
-
-    .slider__image-back {
-        margin-left: 120px;
-        float: left;
-        margin-top: 65px;
-    }
-
-    .slider__playbutton {
-    /*
-        width: 77px;
-        margin-top: -204px;
-        margin-left: auto;
-        margin-right: auto;
-    */
-    }
-
+    
     .slider__menu {
+/*        width: 52%;*/
         width: 960px;
         display: block;
         overflow: hidden;
@@ -1076,7 +1061,8 @@ header{
     .slider__menu ul{
         display: block;
         float: right;
-        margin-right: 130px;    
+/*        margin-right: 180px;    */
+        margin-right: 25%;    
     }
 
     .slider__menu li {
@@ -1144,24 +1130,13 @@ header{
         height: 30px;
         width: 32px;
         background: url(../img/icons.png) 0 0 no-repeat;
-    /*    background-position: -29px 0;*/
     }
 
     .about .second{
-    /*    display: block;*/
-    /*    float: left;*/
-    /*    height: 30px;*/
-    /*    width: 32px;*/
-    /*    background: url(../img/icons.png) 0 0 no-repeat;*/
         background-position: -31px 0;
     }
 
     .about .third{
-    /*    display: block;*/
-    /*    float: left;*/
-    /*    height: 30px;*/
-    /*    width: 32px;*/
-    /*    background: url(../img/icons.png) 0 0 no-repeat;*/
         background-position: -62px 0;
     }
 
@@ -1219,6 +1194,7 @@ header{
     }
 
     .contento-block {
+        width: 100%;
         height: 485px;
         background-color: #f9f9f9;
         border-bottom: 1px solid #e6e6e6;
@@ -1655,20 +1631,35 @@ header{
         width: 768px;
     }
     
+    .slider__left-button{
+        margin-left: 10%;
+        margin-right: 1%;
+    }
+
     .slider__left-button a{
-        margin-top: 180px;
-        margin-right: 22px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .slider__right-button{
+        margin-right: 10%;
+        margin-left: 1%;
     }
     
     .slider__right-button a{
-        margin-top: 180px;
-        margin-left: 30px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    
+    .slider__image-block {
+        margin-left: 5%;
+        margin-top: -120px;
     }
 
     
     .slider__text h1{
         font-size: 48px;
-        margin-top: 102px;
     }
     
     .slider__text h2{
@@ -1692,8 +1683,12 @@ header{
     }
     
     .slider__menu {
-        width: 768px;
+        width: 100%;
         margin-top: 38px;    
+    }
+    
+    .slider__menu ul{
+        margin-right: 27%;
     }
     
     .about {
@@ -1855,8 +1850,6 @@ header{
 
 
 
-
-
 @media only screen and (min-width: 480px) and (max-width:768px)  {
     header {
         width: 480px;
@@ -1873,6 +1866,7 @@ header{
     }
     
     .slider{
+        width: 100%;
         height: 345px;
     }
     
@@ -1880,34 +1874,46 @@ header{
         height: 245px;
     }
     
-    .slider__content {
-        width: 480px;
+    .slider__left-button{
+        margin-left: 14%;
+        margin-right: 1%;
     }
-    
-    .slider__image-block {
-        width: 0;
-        margin-left: 0;
-        position: relative;
-        left: -90px;
-        top: -45px;
-        
-        transform: scale(0.72);
-        margin-bottom: -30px;
-    }
-    
+
     .slider__left-button a{
-        margin-top: 105px;
-        margin-right: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .slider__right-button{
+        margin-right: 14%;
+        margin-left: 1%;
     }
     
     .slider__right-button a{
-        margin-top: 105px;
-        margin-left: 10px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    
+    .slider__content {
+        width: 54%;
+/*        width: 405px;*/
+        height: 60px;
+    }
+    
+    .slider__image-block {
+        margin-left: 1%;
+        transform: scale(0.72);
+        margin-top: -150px;
+        width: 49%;
     }
     
     .slider__text h1{
         font-size: 36px;
-        margin-top: 95px;
+        margin-top: 0px;
+        height: 40px;
+        overflow: hidden;
+        
     }
     
     .slider__text h2{
@@ -1923,13 +1929,15 @@ header{
     
     .slider__text {
         float: left;
-        width: 210px;
+/*        width: 210px;*/
+        width: 50%;
+
     }
     
     .slider__menu {
         clear: both;
         width: 480px;
-        margin-top: 0;
+        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1946,12 +1954,14 @@ header{
     }
     
     .about {
-        width: 480px;
+        width: 64%;
+/*        width: 480px;*/
         margin-top: 70px;
     }
     
     .about__item {
-        width: 435px;
+/*        width: 435px;*/
+        width: 90.5%;
         margin-bottom: 25px;
         margin-right: 25px;
         margin-left: 25px;
@@ -1980,16 +1990,23 @@ header{
 
     }
     
+    .about__item a:hover{
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    
     .contento-block{
         height: 786px;
     }
     
     .contento {
-        width: 480px;
-    }
+        width: 64%;
+/*        width: 480px;*/
+  }
     
     .testimonial-box {
-        width: 420px;
+        width: 87.5%;
+/*        width: 420px;*/
         height: 275px;
         margin-top: 70px;
         margin-bottom: 60px;
@@ -2007,10 +2024,14 @@ header{
     .testimonial-box p{
         height: 170px;
         overflow: hidden;
+        margin-bottom: 30px;
     }
     
     .testimonial-box h3{
         font-size: 30px;
+        overflow: hidden;
+        line-height: 30px;
+        height: 30px;
     }
     
     .pink-text{
@@ -2020,7 +2041,8 @@ header{
 
     .menu_white{
         clear: both;
-        width: 420px;
+        width: 87.5%;
+/*        width: 420px;*/
     }
     
     .menu_white ul{
@@ -2032,14 +2054,24 @@ header{
     .updates-box {
         clear: both;
         float: none;
-        width: 360px;
+        width: 75%;
+/*        width: 360px;*/
         margin-left: auto;
         margin-right: auto;
 
     }
     
     .updates-box__item p{
-        width: 270px;
+        width: 68%;
+/*        width: 270px;*/
+        height: 20px;
+        overflow: hidden;
+        
+    }
+    
+    .updates-box__item h5{
+        width: 68%;
+/*        width: 270px;*/
         height: 20px;
         overflow: hidden;
         
@@ -2056,10 +2088,12 @@ header{
     
     .logo-block{
         height: 235px;
+        width: 100%;
     }
     
     .logo-block__logos {
-        width: 480px;
+        width: 64%;
+/*        width: 480px;*/
         margin-top: 37px;
     }
     
@@ -2069,17 +2103,21 @@ header{
     }
     
     .logo-block li{
+/*        margin-right: 3%;*/
         margin-right: 30px;
+/*        margin-left: 3%;*/
         margin-left: 30px;
         margin-bottom: 25px;        
     }
     
     .content{
         height: 670px;
+        width: 100%;
     }
     
     .news {
-        width: 480px;
+        width: 64%;
+/*        width: 480px;*/
         margin-top: 80px;
     }
     
@@ -2122,6 +2160,7 @@ header{
     
     .footer {
         width: 480px;
+/*        width: auto;*/
         height: 200px;
     }
     
@@ -2164,11 +2203,11 @@ header{
     }
     
     .slider{
-        height: 345px;
+        height: 315px;
     }
     
     .slider__block {
-        height: 245px;
+        height: 235px;
         background-color: rgba(0,0,0,0);
     }
     
@@ -2180,6 +2219,7 @@ header{
         display: none;
     }
     
+/*
     .slider__left-button a{
         margin-top: 105px;
         margin-right: 38px;
@@ -2189,10 +2229,11 @@ header{
         margin-top: 105px;
         margin-left: 0;
     }
+*/
     
     .slider__text h1{
         font-size: 36px;
-        margin-top: 95px;
+/*        margin-top: 95px;*/
     }
     
     .slider__text h2{
@@ -2207,8 +2248,10 @@ header{
     }
     
     .slider__text {
-        float: left;
+        float: none;
         width: 210px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .slider__menu {
@@ -2263,6 +2306,11 @@ header{
         margin-top: 15px;
         margin-right: 10px;
 
+    }
+    
+    .about__item a:hover{
+        margin-top: 15px;
+        margin-right: 10px;
     }
     
     .contento-block{
