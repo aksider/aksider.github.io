@@ -98,23 +98,19 @@ header form input[type=text], input[type=password]{
 }
 
 header form input[type=submit]{
-    background: none;
-    position: relative;
     display: block;
     float: left;
-    top: -1px;
-/*    height: 10px;    */
-    
-/*    margin-left: 4px;*/
-/*    margin-right: 5px;*/
-    
-    font-size: 11px;
-    line-height: 8px;
-    color: #ffffff;
-/*    text-decoration: none;    */
-/*    letter-spacing: -0.1px;    */
-/*    border-left: 1px solid #bec6c9;*/
+    margin-top: -2px;
+    padding: 0;
+    margin-left: 4px;
+    margin-right: 5px;
+
     border: none;
+    background: none;
+
+    font-size: 11px;
+    line-height: 12px;
+    color: #ffffff;
 }
 
 .login li{
