@@ -97,6 +97,26 @@ header form input[type=text], input[type=password]{
     letter-spacing: 0.3px;
 }
 
+header form input[type=submit]{
+    background: none;
+    position: relative;
+    display: block;
+    float: left;
+    top: -1px;
+/*    height: 10px;    */
+    
+/*    margin-left: 4px;*/
+/*    margin-right: 5px;*/
+    
+    font-size: 11px;
+    line-height: 8px;
+    color: #ffffff;
+/*    text-decoration: none;    */
+/*    letter-spacing: -0.1px;    */
+/*    border-left: 1px solid #bec6c9;*/
+    border: none;
+}
+
 .login li{
     position: relative;
     display: block;
@@ -107,14 +127,14 @@ header form input[type=text], input[type=password]{
     border-left: 1px solid #bec6c9;
 }
 
-.login .register{
+.login .password_forgot{
     display: block;
     float: right;
     border-left: none;
     margin-right: 6px;
 }
 
-.login .register a{
+.login .password_forgot a{
     color: #bfbfbf;
     text-decoration: underline;
     font-size: 12px;
@@ -231,16 +251,20 @@ nav .menu ul li a:hover{
     color: #ffffff;
 }
 
+nav .basket a{
+    display: block;
+    float: left;
+    background-image: url(../img/basket.png);
+    width: 26px;
+    height: 21px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+
 nav .basket{
     display: block;
     float: left;
-}
-
-nav .basket img{
-    display: block;
-    float: left;
-    margin-top: 4px;
-    margin-right: 5px;
 }
 
 nav .basket span{

@@ -14,12 +14,12 @@
        
        <form action="#" method="get">
           <img src="img/login.png" alt="login" title="login">
-           <input type="text" name="login" id="login" placeholder="логин">
-           <input type="password" name="password" id="password" placeholder="пароль">
+           <input type="text" name="login" id="login" placeholder="логин" required>
+           <input type="password" name="password" id="password" placeholder="пароль" required>
            <ul class="login">
-               <li><a href="#">вход</a></li>
+               <li><input type="submit" value="вход"></li>
                <li><a href="#">регистрация</a></li>
-               <li class="register"><a href="#">забыли пароль?</a></li>
+               <li class="password_forgot"><a href="#">забыли пароль?</a></li>
            </ul>
        </form>
        
@@ -49,7 +49,7 @@
         </ul>
        </div>
        <div class="basket">
-           <img src="img/basket.png" alt="Basket" title="Basket">
+           <a href="#"></a>
            <span class="basket_items">0</span>
            <span class="basket_total">0,00 грн.</span>
        </div>
@@ -65,31 +65,71 @@
                    <div class="disk_search">
                         <p class="disk_title">Диски:</p>
                        <div class="disk_search_item">
-                            <label class="disk_auto_label" for=""><b>Марка</b> авто:</label><select class="select_large" name="" id=""></select>
+                            <label class="disk_auto_label" for=""><b>Марка</b> авто:</label><select class="select_large" name="" id="">
+                                  <option>---</option>
+                                  <option>Марка 1</option>
+                                  <option>Марка 2</option>
+                                  <option>Марка 3</option>
+                            </select>
                        </div>
                         <div class="disk_search_item">
-                            <label for=""><b>Модель</b> автомобиля:</label><select class="select_large" name="" id=""></select>
+                            <label for=""><b>Модель</b> автомобиля:</label><select class="select_large" name="" id="">
+                                  <option>---</option>
+                                  <option>Модель 1</option>
+                                  <option>Модель 2</option>
+                                  <option>Модель 3</option>
+                            </select>
                         </div>
                         <div class="disk_search_item">
-                            <label for=""><b>Год выпуска</b><br>автомобиля:</label><select class="select_small" name="" id=""></select>
+                            <label for=""><b>Год выпуска</b><br>автомобиля:</label><select class="select_small" name="" id="">
+                                  <option>---</option>
+                                  <option>1990</option>
+                                  <option>2000</option>
+                                  <option>2010</option>
+                            </select>
                         </div>
                         <div class="disk_search_item">
-                            <label for=""><b>Комплектация:</b></label><select class="select_large" name="" id=""></select>
+                            <label for=""><b>Комплектация:</b></label><select class="select_large" name="" id="">
+                                  <option>---</option>
+                                  <option>Комплектация 1</option>
+                                  <option>Комплектация 2</option>
+                                  <option>Комплектация 3</option>
+                            </select>
                         </div>                 
                    </div>
                    <div class="tires_search">
                       <p class="tires_title">Шины:</p>
                        <div class="tires_search_item">
-                            <label class="tires_auto_label" for=""><b>Марка</b> авто:</label><select class="select_large" name="" id=""></select>
+                            <label class="tires_auto_label" for=""><b>Марка</b> авто:</label><select class="select_large" name="" id="">
+                                  <option>---</option>
+                                  <option>Марка 1</option>
+                                  <option>Марка 2</option>
+                                  <option>Марка 3</option>
+                            </select>
                        </div>
                         <div class="tires_search_item">
-                            <label for=""><b>Модель</b> автомобиля:</label><select class="select_large" name="" id=""></select>
+                            <label for=""><b>Модель</b> автомобиля:</label><select class="select_large" name="" id="">
+                                  <option>---</option>
+                                  <option>Модель 1</option>
+                                  <option>Модель 2</option>
+                                  <option>Модель 3</option>
+                            </select>
                         </div>
                         <div class="tires_search_item">
-                            <label for=""><b>Год выпуска</b><br>автомобиля:</label><select class="select_small" name="" id=""></select>
+                            <label for=""><b>Год выпуска</b><br>автомобиля:</label><select class="select_small" name="" id="">
+                                  <option>---</option>
+                                  <option>1990</option>
+                                  <option>2000</option>
+                                  <option>2010</option>
+                            </select>
                         </div>
                         <div class="tires_search_item">
-                            <label for=""><b>Комплектация:</b></label><select class="select_large" name="" id=""></select>
+                            <label for=""><b>Комплектация:</b></label><select class="select_large" name="" id="">
+                                  <option>---</option>
+                                  <option>Комплектация 1</option>
+                                  <option>Комплектация 2</option>
+                                  <option>Комплектация 3</option>
+                            </select>
                         </div>                 
                    </div>
                     <a href="#">поиск...</a>
@@ -165,7 +205,7 @@
                         <p>Goodyear</p>
                         <p>Ultra Grip Extreme</p>
                     </figcaption>
-                    <img src="img/goodyear.png" alt="goodyear" alt="goodyear">
+                    <img src="img/goodyear.png" alt="Goodyear1" title="Goodyear1">
                     <p class="price">90.00 грн.</p>
                 </figure>
                 
@@ -174,7 +214,7 @@
                         <p>Nokian</p>
                         <p>Hakkapeliitta R</p>
                     </figcaption>
-                    <img src="img/nokian.png" alt="goodyear" alt="goodyear">
+                    <img src="img/nokian.png" alt="Nokian1" title="Nokian1">
                     <p class="price">115.00 грн.</p>
                 </figure>
                 
@@ -183,7 +223,7 @@
                         <p>Hankook</p>
                         <p>K 708 155/65 R14</p>
                     </figcaption>
-                    <img src="img/hankook.png" alt="goodyear" alt="goodyear">
+                    <img src="img/hankook.png" alt="Hankook1" title="Hankook1">
                     <p class="price">393.00 грн.</p>
                 </figure>
                 
@@ -192,7 +232,7 @@
                         <p>Goodyear</p>
                         <p>Ultra Grip Extreme</p>
                     </figcaption>
-                    <img src="img/goodyear.png" alt="goodyear" alt="goodyear">
+                    <img src="img/goodyear.png" alt="Goodyear2" title="Goodyear2">
                     <p class="price">90.00 грн.</p>
                 </figure>
                 
@@ -201,7 +241,7 @@
                         <p>Nokian</p>
                         <p>Hakkapeliitta R</p>
                     </figcaption>
-                    <img src="img/nokian.png" alt="goodyear" alt="goodyear">
+                    <img src="img/nokian.png" alt="Nokian2" title="Nokian2">
                     <p class="price">115.00 грн.</p>
                 </figure>
                 
@@ -210,7 +250,7 @@
                         <p>Hankook</p>
                         <p>K 708 155/65 R14</p>
                     </figcaption>
-                    <img src="img/hankook.png" alt="goodyear" alt="goodyear">
+                    <img src="img/hankook.png" alt="Hankook2" title="Hankook2">
                     <p class="price">393.00 грн.</p>
                 </figure>
                 
@@ -219,7 +259,7 @@
                         <p>Goodyear</p>
                         <p>Ultra Grip Extreme</p>
                     </figcaption>
-                    <img src="img/goodyear.png" alt="goodyear" alt="goodyear">
+                    <img src="img/goodyear.png" alt="Goodyear3" title="Goodyear3">
                     <p class="price">90.00 грн.</p>
                 </figure>
                 
@@ -228,7 +268,7 @@
                         <p>Nokian</p>
                         <p>Hakkapeliitta R</p>
                     </figcaption>
-                    <img src="img/nokian.png" alt="goodyear" alt="goodyear">
+                    <img src="img/nokian.png" alt="Nokian3" title="Nokian3">
                     <p class="price">115.00 грн.</p>
                 </figure>
                 
@@ -237,7 +277,7 @@
                         <p>Hankook</p>
                         <p>K 708 155/65 R14</p>
                     </figcaption>
-                    <img src="img/hankook.png" alt="goodyear" alt="goodyear">
+                    <img src="img/hankook.png" alt="Hankook3" title="Hankook3">
                     <p class="price">393.00 грн.</p>
                 </figure>
                 
