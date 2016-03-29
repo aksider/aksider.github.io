@@ -12,7 +12,7 @@ var mm = 0;
 var ss = 0;
 
 
-vremya = function () {
+function timer() {
     var date1 = new Date();
     var ms = date1.getMilliseconds();
     var timeDiffrence;
@@ -57,7 +57,7 @@ vremya = function () {
     
     myMilisec.innerHTML = new Date().getTime() - startMs;
     myTimer.innerHTML = result;
-};
+}
 
 
 function startCount(event) {
@@ -67,7 +67,7 @@ function startCount(event) {
         myStart.innerHTML = 'Pause';
         startMs = new Date().getTime();
         myPause = 1;
-        intervalID = setInterval(vremya, 0);
+        intervalID = setInterval(timer, 0);
         
     } else if (myPause === 1) {
         
@@ -79,7 +79,7 @@ function startCount(event) {
         
         myStart.innerHTML = 'Pause';
         myPause = 1;
-        intervalID = setInterval(vremya, 0);
+        intervalID = setInterval(timer, 0);
     }
     
 }

@@ -18,7 +18,7 @@ var startSplitTimer;
 var endSplitTimer;
 
 
-mySplitMake = function (myText) {
+function mySplitMake(myText) {
     var splitText = document.createElement('p');
     
     splitCounter += 1;
@@ -34,11 +34,10 @@ mySplitMake = function (myText) {
     }
     
     mySplitBox.appendChild(splitText);
-};
+}
 
 
-
-vremya = function () {
+function timer() {
     var date1 = new Date();
     var ms = date1.getMilliseconds();
     
@@ -83,7 +82,7 @@ vremya = function () {
     result = result + '.' + (new Date().getTime() - startMs);
     
     myTimer.innerHTML = result;
-};
+}
 
 
 function msToTime(myMs) {
@@ -144,7 +143,7 @@ function startCount(event) {
         startSplitTimer = new Date().getTime();
         myPause = 1;
         hasStarted = true;
-        intervalID = setInterval(vremya, 10);
+        intervalID = setInterval(timer, 10);
         
         
     } else if (myPause === 1) {
@@ -161,7 +160,7 @@ function startCount(event) {
         startSplitTimer = new Date().getTime();
         hasStarted = true;
         myPause = 1;
-        intervalID = setInterval(vremya, 0);
+        intervalID = setInterval(timer, 0);
         
     }
     
