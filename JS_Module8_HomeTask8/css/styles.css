@@ -1,0 +1,37 @@
+.myForm {
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.myForm__item {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.myForm__item input{
+    height: 22px;
+}
+
+.myForm__button {
+    margin-top: 10px;
+}
+
+.myForm__inputTitle {
+    display: none;
+    float: right;
+    width: 240px;
+    height: 16px;
+    border: 2px solid grey;
+    border-radius: 2px;
+    padding: 4px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 1);
+    box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 1);
+}
