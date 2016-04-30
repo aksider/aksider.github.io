@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Module 13 . JavaScript . HomeTask 13 </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/template.js"></script>    
+    <script src="js/script.js"></script>
+    
+    
+    
+    <script type="text/html" id="myTest">
+            <div class="testHeader">
+                <h3 class="h3 text-center"><%= data.testName %>
+                </h3>
+            </div>
+            
+            <%  for (var i = 0; i < data.questionsArray.length; i++) { %>
+                 <div class="testQuestion">
+                    <h3 class="h3 text-left">
+                        <%= (i+1) + '. ' +data.questionsArray[i][0] %>
+                     </h3>
+                     <%  for (var n = 1; n < 5; n++) { %>
+                         <div class="radio testAnswer">
+                             <label>
+                                 <input type="radio" class="answer" name="<%= 'question' + (i+1) %>" value="<%= n %>">
+                                    <%= data.questionsArray[i][n] %>
+                                 </label>
+                             </div>
+                     <%  };  %>
+                 </div>      
+            <%  };  %>
+            
+            <div class="testButton" id="myButton">
+                <button value="value" class="btn btn-primary btn-lg btn-block" type="button">
+                    <%= data.buttonText %>
+                </button>
+            </div>
+            
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
