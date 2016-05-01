@@ -1,3 +1,5 @@
+'use strict';
+
 $(function () {
     
     function saveData() {
@@ -33,7 +35,7 @@ $(function () {
 
 
     saveData();
-    testData = readData();
+    var testData = readData();
     console.log(testData.testName);
     
     
