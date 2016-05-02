@@ -222,6 +222,7 @@ header{
 .slider__left-button{
     display: block;
     float: left;
+    z-index: 1;
 }
 
 
@@ -235,6 +236,7 @@ header{
 }
 
 .slider__right-button {
+    z-index: 1;
     display: block;
     float: right;
 }
