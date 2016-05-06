@@ -1,10 +1,10 @@
 //function GoogleCallBack(jQueryObj, data) {
-function GoogleCallBack(object) {
+function GoogleCallBack(data) {
 
     var $body = $('body');
     var $content;
     
-    console.log('data', object);
+    console.log('data', data);
 //    console.log('data', data);
     
     for(var i = 0; i < data.results.length; i++) {
