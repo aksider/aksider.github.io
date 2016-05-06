@@ -1,9 +1,11 @@
 function GoogleCallBack(jQueryObj, data) {
+//function GoogleCallBack(object) {
 
     var $body = $('body');
     var $content;
     
-//    console.log('data', data);
+//    console.log('data', object);
+    console.log('data', data);
     
     for(var i = 0; i < data.results.length; i++) {
         
@@ -23,7 +25,10 @@ function GoogleCallBack(jQueryObj, data) {
 function searchGoogle() {
    $.ajax({
 //        url: 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=8&q=' + 'test' + '&callback=GoogleCallBack&context=?',
-        url: 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=8&q=' + $('#searchText').val() + '&callback=GoogleCallBack&context=?',
+
+//last worked       //        url: 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=8&q=' + $('#searchText').val() + '&callback=GoogleCallBack&context=?',
+//        url: 'https://www.googleapis.com/customsearch/v1?key=AIzaSyDgNjaKajvyzbI6uZlqOsa_HY6Th3w5Gfk&q=' + $('#searchText').val() + '&callback=GoogleCallBack&context=?',
+        url: 'https://www.googleapis.com/customsearch/v1?key=AIzaSyDgNjaKajvyzbI6uZlqOsa_HY6Th3w5Gfk&cx=011168767613474021112:o098zgkqbg4&q=' + $('#searchText').val() + '&callback=GoogleCallBack',
 //        url: 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=' + 'test' + '&callback=GoogleCallBack&context=?',
         data: {
             abc: 123
