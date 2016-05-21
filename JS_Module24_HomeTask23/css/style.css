@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif;  
+}
+
+.wrapper {
+    width: 300px;
+    margin: 0 auto;  
+    margin-top: 40px;
+    padding: 50px;
+    border: 1px solid #000000;
+} 
+
+.toDo__item {
+    display: block;
+    list-style: none;
+    clear: both;
+}
+
+.toDo__item-delete {
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+.toDo__item-edit {
+    font-weight: bold;
+    color: limegreen;
+    cursor: pointer;
+}
+
+.toDo__item-btn-edit, .toDo__item-add {
+    padding-left: 5px;
+    padding-right: 5px;
+}
