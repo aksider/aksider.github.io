@@ -1,0 +1,10 @@
+$fontBold: 'Montserrat', sans-serif;
+$colorW: #fff;
+$colorPink: #ff4e50;
+$fontColor: #333333;
+
+@mixin btn {
+  border:none;
+  background: none;
+  cursor: pointer;
+}
