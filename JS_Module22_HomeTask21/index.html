@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title> Module 22 . JavaScript . HomeWork 21 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/dist/style.min.css">
+    
+    <script src="javascript/dist/script.min.js"></script>
+	
+	
+</head>
+<body>
+<script type="text/template" id = "test">
+		<% for (var i =0; i<data.length; i++) { %>
+		<div class="question<%=i%> question">
+			<h1 class="question__text"><%=data[i].question %></h1>
+				<% for (var k = 0; k < data[i].answer.length; k++) { %>
+				<div class="checkbox">
+			    	<label><input type="radio" class="checkbox" name="radio<%= [i] %>"><%= data[i].answer[k] %></label>	
+				</div>
+	<%}; %> 
+		</div>
+		
+	<%}; %>  
+	<div class="result"><span>Отправить</span></div>
+</script>
+</body>
+</html>

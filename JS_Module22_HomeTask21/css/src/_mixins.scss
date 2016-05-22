@@ -1,0 +1,10 @@
+@mixin default-link {
+	color: #000;
+	text-decoration: none;
+}
+
+@mixin max-width1230{
+	width: 100%;
+	max-width: 1230px;
+	margin: 0 auto;
+}
