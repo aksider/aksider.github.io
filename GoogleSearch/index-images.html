@@ -2,20 +2,24 @@
 <html lang="en">
     <head>
         <title>Images Google</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div>
-            <div>
-                <a href="index.html"> Main Page </a>
+        <div class="container">
+            <div class="googleMenu">
+                <a href="index.html" class="googleMenuLink"> Main Page </a>
             </div>
-            <div>
+            <div class="googleLogo">
                 <img src="images/googlelogo.png" alt="Google Logo">
                 <p>Images</p>
             </div>
             <form action="https://google.com/search">
-                <input type="text" name="q">
-                <input type="hidden" name="tbm" value="isch">
-                <input type="submit" value="Google Photo Search">
+                <input type="text" name="q" class="formTextSearch">
+
+                <div class="formSubmitButtons">
+                    <input type="hidden" name="tbm" value="isch">
+                    <input type="submit" class="formSubmitButton" value="Google Photo Search">
+                </div>
             </form>
     
         </div>

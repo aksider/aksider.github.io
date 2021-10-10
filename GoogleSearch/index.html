@@ -2,22 +2,24 @@
 <html lang="en">
     <head>
         <title>Google</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div>
-            <div>
-                <a href="index-images.html"> Images Search Page </a>
-                <a href="index-advanced.html"> Advanced Search Page </a>
+        <div class="container">
+            <div class="googleMenu">
+                <a href="index-images.html" class="googleMenuLink"> Images Search Page </a>
+                <a href="index-advanced.html" class="googleMenuLink"> Advanced Search Page </a>
             </div>
             <div>
-                <div>
+                <div class="googleLogo">
                     <img src="images/googlelogo.png" alt="Google Logo">
                 </div>
                 <form action="https://google.com/search">
-                    <input type="text" name="q">
-                    <input type="submit" value="Google Search">
-                    <input type="submit" value="I am Lucky" formaction="https://www.google.com/search?btnI=Мені+пощастить&iflsig=ALs-wAMAAAAAYWMaTzZcKYw13W65um2raUqXsFWfxNJk&">
+                    <input type="text" class="formTextSearch" name="q">
+                    <div class="formSubmitButtons">
+                        <input type="submit" class="formSubmitButton" value="Google Search">
+                        <input type="submit" class="formSubmitButton" value="I am Lucky" formaction="https://www.google.com/search?btnI=Мені+пощастить&iflsig=ALs-wAMAAAAAYWMaTzZcKYw13W65um2raUqXsFWfxNJk&">
+                    </div>
                 </form>
             </div>
    

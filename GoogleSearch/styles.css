@@ -14,3 +14,68 @@ body, input, button {
 body {
     background: #fff;
 }
+
+.googleLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.googleMenu {
+    display: block;
+    width: 100%;
+}
+
+.googleMenuLink {
+    display: inline-block;
+}
+
+.formTextSearch {
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+    width: 584px;
+    max-width: 584px;
+}
+
+.formSubmitButtons{
+    display: block;
+    height: 70px;
+    padding-top: 18px;
+}
+
+.formSubmitButton{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+input {
+    padding: 0 20px 0 20px;
+}
