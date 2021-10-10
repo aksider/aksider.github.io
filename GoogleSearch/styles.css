@@ -1,0 +1,16 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    min-width: 400px;
+}
+body, input, button {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #202124;
+}
+body {
+    background: #fff;
+}
